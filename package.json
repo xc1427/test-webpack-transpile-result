@@ -7,7 +7,8 @@
   "scripts": {
     "prebuild": "rm -rf ./public/*.js ./public/*.js.map",
     "build": "webpack -w",
-    "serve": "http-server ./public"
+    "serve": "http-server ./public",
+    "analysis-sourcemap": "./scripts/sourceMapAnalysis/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -18,9 +19,9 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "style-loader": "^1.0.0",
+    "vlq": "^1.0.1",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
